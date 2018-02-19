@@ -12,10 +12,20 @@
         img {
             max-width: 100%;
             vertical-align: top;
+            display: none;
+        }
+        img#responsive {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            img#responsive {
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
+    <img src="invie-responsive.png" alt="Versión Responsive de nuestra landing" id="responsive">
     <img src="header.jpg" alt="Cabecera del proyecto invie">
     <img src="hero.jpg" alt="Cuerpo de la página, Guitarras inviesibles">
     <img src="acustica.jpg" alt="Nuestras guitarras, Invie Acustica">
